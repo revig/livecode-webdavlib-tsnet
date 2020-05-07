@@ -89,6 +89,7 @@ These are the request data array keys used depending on the particular request m
 -   lockToken (the cCurrentLockToken of stack "WebDavLib")
 -   callBack (the name of a callback handler used by methods GET and PUT)
 -   callbackTarget (the long ID of the object containing the callback handler)
+-   all tsNet settings relevant for the particular transfer type
 
 
 Following are the available public handlers:
@@ -115,5 +116,5 @@ Following are the available public handlers:
 
 ### Meta
 
--   Version: 1.0.1
+-   Version: 1.0.2
 -   Author:  [Ralf Bitter](mailto:rabit@revigniter.com)
