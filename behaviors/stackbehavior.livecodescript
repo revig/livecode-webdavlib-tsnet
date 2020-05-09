@@ -8,7 +8,7 @@
 -- WebDAV communication library backed by tsNet
 --
 -- @author rabit@revigniter.com
--- @version 1.0.2
+-- @version 1.0.3
 -- @license: MIT
 --
 --==================================================================--
