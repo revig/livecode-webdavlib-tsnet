@@ -154,7 +154,7 @@ command wdlSet pItem pVal pReqID pOmitTsNet
             break
          default
             -- default code
-            if (pItem is in "username,password,no_reuse,save_sent_headers,user_agent,force_basic_auth,force_digest_auth,transfer_encoding,byte_range,cookie_file,cookie_jar,cookie_list,cookies,dont_modify_path,enable_tcp_keepalive,expect100_timeout,fail_on_http_error,if_mod_since,if_unmod_since,ignore_content_length,interface,junk_session_cookies,keepalive_idle,keepalive_interval,local_port_range,local_port_start,max_file_size,max_recv_speed,max_send_speed,no_transfer,post_on_301,post_on_302,post_on_303,proxy_auth_digest,proxy_headers,proxy_http_10,referer,resolve_hosts,resume_from,ssl_ciphers,ssl_client_cert,ssl_client_cert_type,ssl_client_key,ssl_client_key_pass,ssl_client_key_type,ssl_proxy_client_cert,ssl_proxy_client_cert_type,ssl_proxy_client_key,ssl_proxy_client_key_pass,ssl_proxy_client_key_type,trace,transfer_encoding,trust_location_auth,try_ssl,tunnel_http_proxy,use_ssl_control") \
+            if (pItem is among the lines of the cTsNetSettings of stack "WebDavLib") \
                   and (pOmitTsNet <> TRUE) then
                put pVal into sWebDavPoolA[pReqID]["settings"][pItem]
             else
