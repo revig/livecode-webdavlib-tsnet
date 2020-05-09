@@ -743,16 +743,12 @@ end wdlGetFileHeaders
 --| - host (the host address like: myname.ocloud.de)
 --| - uri (the path to the WebDAV directory like: /remote.php/webdav/)
 --| - port (as a general rule this is 80 or 443 for secure connections)
---| - user
+--| - username
 --| - password (user password or app password)
 --| - authType (Basic or Digest)
 --| - sslFlag (a boolean, TRUE for a secure connection)
 --| - method (see the WebDav methods above)
---| - agent (User-agent)
---| - propertiesXML (the properties XML data included in a XML request body)
---| - contentType (Content-type like application/xml; charset="utf-8")
---| - contentLength
---| - dataToUpload (the binary file data to upload)
+--| - user_agent (User-agent)
 --| - nameSpace (WebDAV XML namespace like http://www.w3.com/standards/z39.50/)
 --| - lockScope (exclusive or shared)
 --| - lockType (write)
@@ -760,6 +756,7 @@ end wdlGetFileHeaders
 --| - lockToken (the cCurrentLockToken of stack "WebDavLib")
 --| - callBack (the name of a callback handler used by methods GET and PUT)
 --| - callbackTarget (the long ID of the object containing the callback handler)
+--| - all tsNet settings relevant for the particular transfer type
 --|
 --| Format:  wdlSetupNewRequest param1[, param2]
 --|
