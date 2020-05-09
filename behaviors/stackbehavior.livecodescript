@@ -116,11 +116,10 @@ end wdlGet
 --| Last Mod: 2020-05-10
 --| Requires: --
 --|
---| Summary: Set library variable value for: method, agent, host, uri,
---|          user, password, contentType, contentLength, nameSpace,
---|          properties, dataToUpload, callBack, object, timeOut,
---|          lockScope, lockType, lockOwner, lockToken, sslFlag, port,
---|          authType, and maxRequests
+--| Summary: Set library variable value for: method, user_agent, host, uri,
+--|          username, password, nameSpace, callBack, lockScope, lockType, lockOwner
+--|          lockToken, timeOut (not relevant for tsNet requests),
+--|          sslFlag, port, authType, and maxRequests
 --|
 --| Format:  wdlSet param1, param2[, param3][, param4]
 --|
