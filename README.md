@@ -105,7 +105,7 @@ Following are the available public handlers:
 -   wdlSetFileProps(tReqID, tSetPropsA, tRemovePropsA)
 -   wdlGetFileProps(tReqID, tProps)
 -   wdlGetCustomProps(tReqID, tProps)
--   wdlLock(tReqID)
+-   wdlLock(tReqID, tScope, tType)
 -   wdlUnlock(tReqID)
 -   wdlGetFileHeaders(tReqID)
 -   wdlCleanup tReqID
