@@ -116,5 +116,5 @@ Following are the available public handlers:
 
 ### Meta
 
--   Version: 1.0.3
+-   Version: 1.0.4
 -   Author:  [Ralf Bitter](mailto:rabit@revigniter.com)
