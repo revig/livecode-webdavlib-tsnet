@@ -8,7 +8,7 @@ script "WebDavLibStackBehavior"
 -- WebDAV communication library backed by tsNet
 --
 -- @author rabit@revigniter.com
--- @version 1.0.5
+-- @version 1.0.6
 -- @license: MIT
 --
 --==================================================================--
