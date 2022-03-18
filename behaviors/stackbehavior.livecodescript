@@ -2507,12 +2507,12 @@ end _wdlPropertyVals
 --| COMMAND wdlCheckResponse
 --|
 --| Author: rabit
---| Version:  1.0
---| Created: 2020-04-01
+--| Version:  1.1
+--| Created: 2022-03-18
 --| Last Mod: --
 --| Requires: _wdlWriteError
 --|
---| Summary: Check if response exceeds time limit.
+--| Summary: Check if response of tsNet free requests exceeds time limit.
 --|
 --| Format:  wdlCheckResponse
 --|
@@ -2529,7 +2529,7 @@ command wdlCheckResponse
    repeat with tReqID = 1 to sMaxRequests
       if sWebDavPoolA[tReqID]["status"] is not empty and sWebDavPoolA[tReqID]["status"] \
             is not in "done,error,cancelled,socketTimeout,timeLimitExceeded" then
-         if the millisecs - sWebDavPoolA[tReqID]["startTime"] > sTimeout then
+         if (sWebDavPoolA[tReqID]["startTime"] <> empty) and (the millisecs - sWebDavPoolA[tReqID]["startTime"] > sTimeout) then
             put "Error: Timeout!" into sWebDavPoolA[tReqID]["error"]
             # STOP WAITING
             put "timeLimitExceeded" into sWebDavPoolA[tReqID]["HTTPresponse"]
